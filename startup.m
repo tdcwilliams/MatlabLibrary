@@ -1,16 +1,6 @@
-function startup(matlibdir)
-
-if ~exist('matlibdir','var')
-   matlibdir   = [getenv('MATLIBDIR')];
-   if strcmp('', matlibdir)
-      matlibdir   = pwd;
-   end
-end
-matlibdir   = [matlibdir,'/'];
-
-addpath([matlibdir,'BES_progs/'   ])
-addpath([matlibdir,'CURVE_progs/' ])
-addpath([matlibdir,'GEN_progs/'   ])
-addpath([matlibdir,'OP_progs/'    ])
-addpath([matlibdir,'SF_progs/'    ])
-addpath([matlibdir,'STAT_progs/'  ])
+addpath('BES_progs/');
+addpath('CURVE_progs/');
+addpath('GEN_progs/');
+addpath('OP_progs/');
+addpath('SF_progs/');
+addpath('STAT_progs/');
